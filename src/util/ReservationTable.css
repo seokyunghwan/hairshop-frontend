@@ -1,0 +1,32 @@
+.reservation-table{
+    width: 800px;
+}
+
+.sunday { 
+    color: rgb(248, 85, 20)  
+} 
+
+.days .date{
+    font-size: 1.3rem;
+}
+.week-table{
+    border: 1px solid #ccc;
+    text-align: center;
+    border-collapse: separate;
+}
+.week-table td{
+    padding-left: 0;
+    cursor: default;
+}
+
+.week-table th, .week-table td{
+    border: 1px solid #ccc;
+}
+
+.week-table td:hover{
+    background-color: whitesmoke;
+}
+
+.no-res{
+    background-color: whitesmoke;
+}

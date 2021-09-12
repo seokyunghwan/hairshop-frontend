@@ -1,0 +1,128 @@
+.shop-info{
+    display: flex;
+    margin: 30px 0;
+}
+
+.shop-info.block{
+    display: block;
+}
+
+.shop-info-title{
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    height: 100%;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.shop-info-content input{
+    margin-top: 5px;
+    width: 250px;
+    text-align: center;
+}
+.shop-info-content textarea{
+    width: 250px;
+    height: 100px;
+    border-radius: 4px;
+    resize: none;
+    font-size: 0.9rem;
+    border: 1px solid lightgray;
+    overflow: hidden;
+}
+.register-shop .select{
+    margin-top: 10px;
+}
+
+.run-time{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.close-time{
+    margin-left: 50px;
+}
+
+
+.shop-info-content.serviceInfo{
+    display: flex;
+}
+.shop-info-content input{
+    border: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+}
+
+.shop-info-content input:focus{
+    outline: none;
+}
+
+.service{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid lightgray;
+}
+.service table{
+    width: 300px;
+    height: 270px;
+    text-align: center;
+}
+
+.service tr{
+    line-height: 30px;
+}
+
+.service td{
+    padding: 5px;
+}
+
+.service input{
+    text-align: center;
+    width: 100%;
+}
+
+.serviceInfo textarea{
+    width: 100%;
+    height: 100px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    resize: none;
+    font-size: 0.9rem;
+}
+textarea:focus{
+    outline: none;
+}
+
+.service table button{
+    background-color: lightgray;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.save{
+    background-color: white;
+}
+.test{
+    width: auto;
+    border-bottom: none;
+}
+.save-list{
+    margin-left: 10px;
+}
+.save-service{
+    width: 150px;
+    display: inline-block;
+    margin: 10px 10px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    border-radius: 4px;
+}
+.save-service div{
+    padding: 0 20px;
+    text-align: center;
+}
+
+.save-service div:last-child{
+    border-top: 1px solid lightgray;
+}

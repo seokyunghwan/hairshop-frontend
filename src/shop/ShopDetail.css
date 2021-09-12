@@ -1,0 +1,107 @@
+.shop-detail-content{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.shop-images{
+    width: 400px;
+}
+
+.big-img{
+    height: 100%;
+}
+
+.shop-detail-info{
+    width: 400px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.shop-detail-info h5{
+    font-weight: bold;
+}
+
+.shop-title{
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+.shop-name{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.bookmark{
+    width: 30px;
+    height: 30px;
+    background: url(../img/icon/bookmark.svg) no-repeat;
+}
+
+.bookmark.on{
+    background: url(../img/icon/bookmarkOn.svg) no-repeat;
+}
+
+.detail-info{
+    display: flex;
+    margin: 5px;
+}
+
+.shopinfo-icon{
+    margin-right: 15px;
+    fill: #a8cbcf;
+    width: 1.2rem;
+}
+.price-list{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+.price{
+    display: flex;
+}
+.product-name{
+    flex: 1 1 0;
+}
+.go-reservation{
+    display: flex;
+    flex: 1 1 auto;
+    align-items: flex-end;
+}
+.go-reservation button{
+    background-color: lightgray;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.reservation-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    grid-gap: 2em;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.review-content table{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    line-height: 2rem;
+}
+
+.review-content thead{
+    border-bottom: 1px solid black;
+}
+
+.review-content table tr:not(:last-child){
+    border-bottom: 1px solid lightgray;
+}

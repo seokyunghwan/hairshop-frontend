@@ -1,0 +1,50 @@
+
+.search-form{
+    margin: auto;
+    margin-top: 10px;
+}
+.search-input{
+    width: 200px;
+    margin-right: 20px;
+}
+.searchImg{
+    cursor: pointer;
+}
+
+.search-result{
+    margin: 30px auto;
+    width: 100%;
+}
+
+.search-result table{
+    width: 100%;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    line-height: 2.5rem;
+}
+.shop-lists{
+    cursor: pointer;
+}
+.shop-lists:hover{
+    background-color: whitesmoke;
+}
+.search-result thead{
+    border-bottom: 1px solid #444;
+}
+.search-result th,.search-result td{
+    padding-left: 1rem;
+}
+.search-result tr:not(:last-child){
+    border-bottom: 1px solid rgb(233, 230, 230);
+}
+.none-search{
+    text-align: center;
+}
+.page-nums{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.page-num:hover{
+    color: green;
+}

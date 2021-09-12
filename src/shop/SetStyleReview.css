@@ -1,0 +1,37 @@
+.set-style-modal{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: white;
+    padding: 1em;
+    border-radius: 1em;
+}
+.modal-title{
+    display: inline;
+}
+
+.modal-cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-cont-detail{
+    display: flex;
+    padding: 10px;
+}
+.cont-detail-title{
+    flex: 1 1 100px;
+}
+.cont-detail-content{
+    flex: 1 1 200px;
+}
+
+.service-cont{
+    resize: none;
+    width: 90%;
+    height: 5rem;
+}
+
+.style-confirm{
+    align-self: center;
+}

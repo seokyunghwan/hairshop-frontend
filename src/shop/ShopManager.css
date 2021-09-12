@@ -1,0 +1,12 @@
+.shop-manager{
+    min-width: 850px;
+}
+.reservation-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+

@@ -1,0 +1,77 @@
+.content-title{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.content-title h4{
+    display: inline;
+    font-weight: bold;
+}
+
+.content-title p{
+    margin-left: 10px;
+    display: inline;
+    font-weight: bold;
+}
+
+.mystyle table{
+    width: 100%;
+    border-bottom: 1px solid #444;
+    line-height: 2.5rem;
+}
+.mystyle thead{
+    border-bottom: 1px solid #444;
+}
+.mystyle th, .mystyle td{
+    padding-left: 1rem;
+}
+.mystyle tr:not(:last-child){
+    border-bottom: 1px solid rgb(233, 230, 230);
+}
+
+
+.reservations-content table{
+    width: 100%;
+    border-bottom: 1px solid #444;
+    line-height: 2.5rem;
+}
+
+.reservations-content thead{
+    border-bottom: 1px solid #444;
+}
+
+.reservations-content th, .reservations-content td{
+    padding-left: 1rem;
+}
+
+.reservations-content tr:not(:last-child){
+    border-bottom: 1px solid rgb(233, 230, 230);
+}
+
+.reservations-title h4{
+    display: inline;
+}
+.more{
+    display: inline;
+    float: right;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+.reservations-content tbody tr{
+    cursor: pointer;
+}
+.reservations-content tbody tr:hover{
+    background-color: whitesmoke;
+    opacity: 0.5;
+}
+
+.no-res-list{
+    text-align: center;
+}
+
+.favorites-content{
+    display: flex;
+    margin-top: 20px;
+    background-color: #eee;
+    padding: 10px;
+}

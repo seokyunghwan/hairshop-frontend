@@ -1,0 +1,44 @@
+@import './Default.css';
+
+.App {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: 
+      'header header header'
+      ' main   main   main'
+      'footer footer footer'
+  ;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: 130px 1fr 50px;
+  min-width: 850px;
+}
+
+.main{
+  grid-area: main;
+  width: 80%;
+  min-width: 850px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+}
+
+.header{
+  grid-area: header;
+}
+
+.footer{
+  grid-area: footer;
+}
+.content-body{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.content-group{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border: 1px solid #c7c7c7;
+  background-color: #fff;
+  padding: 20px;
+}

@@ -1,0 +1,15 @@
+.submit-button{
+    display: flex;
+    justify-content: space-between;
+}
+
+.check-error{
+    color: red;
+} 
+
+.role-checkbox{
+    display: inline;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}

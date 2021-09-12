@@ -1,0 +1,107 @@
+.header{
+    display: block;
+    align-items: center;
+    color: white;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+	padding: 0 1rem;
+    background-color: #89b03f;
+}
+.menu{
+    align-self: flex-end;
+    width: 60px;
+    height: 55px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+.login-link:hover{
+    font-size: 1.1rem;
+}
+.profileImg{
+    width: 35px;
+    height: 35px;
+    float: right;
+    fill: white;
+    transition: all 0.3s;
+}
+
+.profileImg.active{
+    fill: #9adb80;
+    transition: all 0.2s;
+}
+
+.menu-list{
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    width: 150px;
+    box-shadow: 5px 5px 20px 0px lightgray;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+.menu-list.active{
+    opacity: 1;
+    transition: all 0.3s;
+    background-color: white;
+    z-index: 1;
+}
+
+.menu-item{
+    width: 100%;
+    height: 35px;
+}
+.menu-item:hover{
+    background: rgb(233, 255, 216);
+    color: #89b03f;
+    
+}
+.menu-link{
+    color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    padding: 5px 0 5px 10px;
+}
+
+
+.navbar{
+    grid-area: navbar;
+    justify-content: center;
+    border-bottom: 1px solid rgb(230, 226, 226);
+}
+
+
+.nav-item{
+    position: relative;
+    margin: 0 30px;
+    font-size: 1.2rem;
+    padding: 0 5px;
+    color: rgba(0,0,0,0.6);
+    font-weight: bold;
+}
+
+.nav-item:hover{
+    color: #89b03f;
+}
+.nav-item:hover:after {
+    content:'';
+    position: absolute;  
+    bottom:-9px;
+    left:0; 
+    z-index:1; 
+    width:100%; 
+    height:3px; 
+    background:#89b03f;
+}
+
+@media(max-width:600px){
+    .navbar{
+        width: 600px;
+    }
+}

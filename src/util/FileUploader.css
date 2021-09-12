@@ -1,0 +1,23 @@
+.file-upload button{
+    background-color: lightgray;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.file-thumbnail{
+    background-color: lightgray;
+    margin: 10px;
+}
+
+.file-thumbnail img{
+    max-width: auto;
+    max-height: 200px;
+    border-radius: 4px;
+}
+
+.image-list{
+    display: flex;
+    align-items: center;
+}
+
+
