@@ -1,7 +1,7 @@
 import moment from "moment";
 import { useRouteMatch, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { useLocation, useParams } from "react-router"
+import { useHistory, useLocation, useParams } from "react-router"
 import NewsService from "../api/NewsService";
 import CommunityService from "../api/CommunityService";
 import './Board.css';
@@ -11,6 +11,7 @@ export default function Board() {
     let { id } = useParams();
     let [comment, setComment] = useState('');
     const location = useLocation();
+    const history = useHistory();
     useEffect(() => {
         if (location.pathname.includes('news')) {
             NewsService.getNews(id)
@@ -32,7 +33,12 @@ export default function Board() {
                     <div className="post-detail">
                         <div className="post-title-line">
                             <div className="post-title">{post.title}</div>
-                            <div className="post-writer">{post.writer?.userId}</div>
+
+                            <div className="post-writer">{
+                                location.pathname.includes('news') ?
+                                    <td>운영자</td>
+                                    : <td>{post.writer?.userId}</td>
+                            }</div>
                             <div className="post-date">{moment(post.createdTime).format('YYYY.MM.DD HH:mm:ss')}</div>
                         </div>
                         <div className="post-content">{post.content}</div>
@@ -60,19 +66,24 @@ export default function Board() {
     )
 
     function regComment() {
-        if (location.pathname.includes('news')) {
-            NewsService.setComment(id, userInfo.id, comment)
-                .then((res) => {
-                    setPost(res.data)
-                });
+        if (userInfo) {
+            if (location.pathname.includes('news')) {
+                NewsService.setComment(id, userInfo.id, comment)
+                    .then((res) => {
+                        setPost(res.data)
+                    });
 
-        } else if (location.pathname.includes('community')) {
-            CommunityService.setComment(id, userInfo.id, comment)
-                .then((res) => {
-                    setPost(res.data)
-                });
+            } else if (location.pathname.includes('community')) {
+                CommunityService.setComment(id, userInfo.id, comment)
+                    .then((res) => {
+                        setPost(res.data)
+                    });
+            }
+        } else{
+            alert('로그인 후 댓글 입력 가능합니다');
+            history.push('/login');
         }
-    window.location.reload()
+        window.location.reload()
 
     }
 }

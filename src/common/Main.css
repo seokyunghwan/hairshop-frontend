@@ -4,19 +4,7 @@
     padding: 0 50px;
     position: relative;
 }
-.content-main::before{
-    content: "";
-    background-image: url('../img/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.5;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-}
+
 
 .main-table{
     display: flex;

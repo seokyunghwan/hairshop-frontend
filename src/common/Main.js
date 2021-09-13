@@ -283,7 +283,7 @@ export default function Main(props) {
         )
     }
     function roleCheck() {
-        if (role == Roles.USER) {
+        if (role == Roles.USER || !role) {
             return (<UserMain />)
         } else if (role == Roles.MANAGER) {
             return (<ManagerMain />)

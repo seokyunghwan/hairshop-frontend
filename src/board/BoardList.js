@@ -38,7 +38,11 @@ export default function BoardList(props) {
                                 })
                             }}>
                                 <td>{data.id}</td>
-                                <td>{data.writer.userId}</td>
+                                {
+                                    location.pathname.includes('news')?
+                                    <td>운영자</td>
+                                    : <td>{data.writer.userId}</td>
+                                }
                                 <td>{data.title}</td>
                                 <td>
                                     {
